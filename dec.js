@@ -99,4 +99,33 @@ alert(urprice);
 
 
 
+   let run5 =()=>{
+
+
+text5=document.querySelector("#text5")
+
+text5.style.backgroundColor="purple"
+    
+    }
+
+
+
       // -------------------------------------------------------------------
+
+
+      
+
+
+   let run6 =()=>{
+
+
+    text5=document.querySelector("#text5")
+    
+    text5.style.backgroundColor="purple"
+        
+        }
+    
+    
+    
+          // -------------------------------------------------------------------
+    
