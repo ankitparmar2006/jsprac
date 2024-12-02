@@ -116,12 +116,18 @@ text5.style.backgroundColor="purple"
       
 
 
-   let run6 =()=>{
+   let run6 = ()=>{
 
 
-    text5=document.querySelector("#text5")
-    
-    text5.style.backgroundColor="purple"
+   let textt6=document.querySelector("#text6")
+  
+
+    if (textt6.style.display=="none"){
+        textt6.style.display="block"
+    }
+    else {
+        textt6.style.display="none"
+    }
         
         }
     
@@ -129,3 +135,102 @@ text5.style.backgroundColor="purple"
     
           // -------------------------------------------------------------------
     
+ 
+
+          let run7 =()=>{
+
+
+            let text7=document.querySelector("#text7")
+            text7.innerHTML=" BMW "
+                 
+                 }
+
+
+                 
+    
+          // -------------------------------------------------------------------
+    
+          let temp=0;
+
+          let inc =()=>{
+
+
+            let text7=document.querySelector("#text8")
+            text7.innerHTML=temp;
+            temp++;
+                 
+                 }
+
+                 let dec =()=>{
+
+
+                    let text8=document.querySelector("#text8")
+                    text8.innerHTML=temp;
+
+                    temp--;
+                         
+                         }
+    // -------------------------------------------------------------------
+
+
+  let  run9 = (a) => {
+
+let text9=document.querySelector("#text9");
+text9.innerHTML=`the square of ${a*a}`;
+
+
+  }
+
+      // -------------------------------------------------------------------
+
+
+      let  run10 = (a,b) => {
+
+        let text10=document.querySelector("#text10");
+        text10.innerHTML=`the square of ${a*b}`;
+        
+        
+          }
+
+   // -------------------------------------------------------------------
+
+   
+   let  run11 = (a,b) => {
+
+    let text11=document.querySelector("#text11");
+if (a>b){
+    text11.innerHTML=` is greater  ${a}`;
+
+}
+
+else {
+    text11.innerHTML=` is greater  ${b}`;
+
+}
+
+    
+    
+      }
+
+// -------------------------------------------------------------------
+
+let  run12 = (a,b) => {
+
+    let text10=document.querySelector("#text12");
+    text10.innerHTML=`addition is =   ${a+b}  <br>
+    substruction is  =  ${a-b} <br>
+     multiplication is  =  ${a*b} <br>
+     division is =  ${a/b}`;
+    // text10.innerHTML=`the square of`;
+
+    // text10.innerHTML=`the square of  `;
+
+    // text10.innerHTML=`the square of ${a/b}`;
+
+
+    
+    
+      }
+
+// -------------------------------------------------------------------
+
