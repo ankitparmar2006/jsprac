@@ -12,3 +12,18 @@
 // console.log (fruit)
 // }
 // arr2 ();
+
+let ans=()=>{
+
+    let str ="";
+for (let i=1; i<=10;i++) {
+
+   str+= prompt(`enter ur name ${i}`)
+
+
+}
+console.log(str)
+
+}
+
+ans ();

@@ -221,16 +221,144 @@ let  run12 = (a,b) => {
     substruction is  =  ${a-b} <br>
      multiplication is  =  ${a*b} <br>
      division is =  ${a/b}`;
-    // text10.innerHTML=`the square of`;
-
-    // text10.innerHTML=`the square of  `;
-
-    // text10.innerHTML=`the square of ${a/b}`;
-
-
-    
-    
       }
 
 // -------------------------------------------------------------------
 
+
+let sub =()=>{
+
+
+let name =document.querySelector("#name").value;
+
+let num =document.querySelector("#num").value;
+
+let email =document.querySelector("#email").value;
+
+let pass =document.querySelector("#pass").value;
+
+let cpass =document.querySelector("#cpass").value;
+
+
+
+
+
+
+
+let errorname=document.querySelector("#errorname");
+
+let errornum=document.querySelector("#errorname");
+
+
+let erroremail=document.querySelector("#errorname");
+
+
+let errorpass=document.querySelector("#errorname");
+
+
+let errorcpass=document.querySelector("#errorname");
+
+
+if (name==="") {
+errorname.innerHTML="Please enter your name";
+errorname.style.color="red"
+errorname.style.fontSize="22px"
+
+return false;
+
+}
+
+
+
+
+else if (num==="") {
+    errornum.innerHTML="Please enter your number";
+    errornum.style.color="red"
+    errornum.style.fontSize="22px"
+    
+    return false;
+    
+    }
+
+    else if (num.length !=10) {
+        errornum.innerHTML="Please enter your 10 number";
+        errornum.style.color="red"
+        errornum.style.fontSize="22px"
+        
+        return false;
+        
+        }
+
+        else if (isNaN (num)) {
+            errornum.innerHTML="Please enter only vaild number";
+            errornum.style.color="red"
+            errornum.style.fontSize="22px"
+            
+            return false;
+            
+            }
+    
+
+    
+else if (email==="") {
+    erroremail.innerHTML="Please enter your email";
+    erroremail.style.color="red"
+    erroremail.style.fontSize="22px"
+    
+    return false;
+    
+    }
+
+
+
+else if (!(email.includes("@") && email.includes(".com"))) {
+    erroremail.innerHTML="Please use @ and .com ";
+    erroremail.style.color="red"
+    erroremail.style.fontSize="22px"
+    return false;
+    
+    }
+
+
+    
+else if (pass==="") {
+    errorpass.innerHTML="Please enter your password";
+    errorpass.style.color="red"
+    errorpass.style.fontSize="22px"
+    
+    return false;
+    
+    }
+
+    else if (pass.length !=8) {
+        errorpass.innerHTML="Please enter minimum 8digit";
+        errorpass.style.color="red"
+        errorpass.style.fontSize="22px"
+        
+        return false;
+        
+        }
+
+
+
+    
+else  if (cpass==="") {
+    errorcpass.innerHTML="Please enter your confirm pswd";
+    errorcpass.style.color="red"
+    errorcpass.style.fontSize="22px"
+    return false;
+    
+    }
+
+    
+else  if (cpass != pass) {
+    errorcpass.innerHTML="pswd not matching";
+    errorcpass.style.color="red"
+    errorcpass.style.fontSize="22px"
+    return false;
+    
+    }
+
+
+
+}
