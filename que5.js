@@ -329,3 +329,19 @@ let run15 =(a,b)=>{
   
 
 }
+
+
+
+let a=20;
+let b=30;
+
+console.log(` the sum is ${a+b}`)
+
+
+let num2=parseInt(prompt("enter one number"))
+
+let num3=parseInt(prompt("enter second number"))
+
+let sum=`the sum is ${num3+num2}`
+
+alert(sum)
